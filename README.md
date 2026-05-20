@@ -60,6 +60,8 @@ VITE_FIREBASE_STORAGE_BUCKET=your_actual_storage_bucket_here
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_actual_messaging_sender_id_here
 VITE_FIREBASE_APP_ID=your_actual_app_id_here
 
+---
+
 ## Secure Firebase Initialization (src/firebase.ts)
 The application loads these variables safely using Vite's environment management system:
 
@@ -83,6 +85,7 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export default app;
 
+---
 
 ## 📁 Project Structure
 Plaintext
@@ -100,6 +103,7 @@ Plaintext
 ├── package.json     # Project dependencies and scripts
 └── vite.config.ts   # Vite compiler configuration
 
+---
 
 ## 📜 Available Scripts
 npm run dev - Starts the local development server with Hot Module Replacement (HMR).
