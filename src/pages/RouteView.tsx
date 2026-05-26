@@ -16,10 +16,10 @@ L.Icon.Default.mergeOptions({
 
 // Custom Bus Icon
 const busIcon = new L.Icon({
-  iconUrl: 'https://cdn-icons-png.flaticon.com/512/3448/3448339.png',
-  iconSize: [40, 40],
-  iconAnchor: [20, 40],
-  popupAnchor: [0, -40],
+  iconUrl: '/mini_bus.png',
+  iconSize: [48, 48],
+  iconAnchor: [24, 24],
+  popupAnchor: [0, -20],
 });
 
 type BusStatus = {

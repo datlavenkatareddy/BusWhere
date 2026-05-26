@@ -108,9 +108,27 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col gap-3 mt-4">
-        <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest ml-2 mb-1">
-          Recent Routes
-        </h3>
+        <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest pl-2">Quick Actions</h3>
+        
+        <button 
+          onClick={() => navigate('/map')}
+          className="bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between hover:bg-white transition-all hover:shadow-md group active:scale-[0.98]"
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <MapPin size={24} />
+            </div>
+            <div className="text-left">
+              <h4 className="font-bold text-gray-900">Live Campus Map</h4>
+              <p className="text-xs text-gray-500 font-medium mt-0.5">See all active buses at once</p>
+            </div>
+          </div>
+          <ArrowRight size={20} className="text-gray-300 group-hover:text-indigo-500 group-hover:translate-x-1 transition-all" />
+        </button>
+      </div>
+
+      <div className="flex flex-col gap-3 mt-2">
+        <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest pl-2">Recently Viewed</h3>
         {recentRoutes.map((route, i) => (
           <button
             key={route.id}
